@@ -1,24 +1,14 @@
 ## {{ cookiecutter.project_name }}
 
-[Static Badge](https://img.shields.io/badge/Made_With_Python-blue)
-
-
 ### Sobre o Projeto
 
 {{ cookiecutter.project_description }}
 
-### Estrutura do Projeto
+### Sobre os Dados
 
-├── data
-│   ├── external
-│   └── processed
-├── docs
-├── reports
-└── src
-    ├── models
-    └── notebooks
+{{ cookiecutter.data_description }}
 
-**Objetivos**
+### Objetivos
 
 {{ cookiecutter.project_goals }}
 

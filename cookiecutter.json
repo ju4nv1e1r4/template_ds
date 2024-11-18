@@ -2,6 +2,7 @@
     "project_name": "Nome do seu projeto",
     "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
     "project_description": "Descrição do seu projeto",
+    "data_description": "Descreva os dados usados no seu projeto",
     "project_goals": "Defina o objetivo do seu projeto",
     "author_name": "Seu nome",
     "email": "seuemail@example.com"
