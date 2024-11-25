@@ -13,5 +13,5 @@
 {{ cookiecutter.project_goals }}
 
 
-Autor: {{ cookiecutter.author_name }}
-Contato: {{ cookiecutter.email }}
+Author: {{ cookiecutter.author_name }}
+Contact: {{ cookiecutter.email }}
