@@ -1,14 +1,14 @@
 ## {{ cookiecutter.project_name }}
 
-### Sobre o Projeto
+### About
 
 {{ cookiecutter.project_description }}
 
-### Sobre os Dados
+### Data Description
 
 {{ cookiecutter.data_description }}
 
-### Objetivos
+### Goals
 
 {{ cookiecutter.project_goals }}
 
