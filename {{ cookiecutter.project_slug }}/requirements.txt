@@ -1,0 +1,43 @@
+# OBS: Please remember to install current versions (or specific versions) of your libs
+# ====================================================================
+# ============================= INSTALLS =============================
+# ====================================================================
+# Data Manipulation
+
+pandas
+numpy
+
+# Data Orchestration
+
+apache-airflow
+
+# DataViz
+
+matplotlib
+seaborn
+pltotly
+
+# ML frameworks
+
+scikit-learn
+scikit-optimize
+xgboost
+lightgbm
+tensorflow
+
+# MLOps frameworks
+
+mlflow
+kubeflow
+struclog
+pytest
+
+# APIs frameworks
+
+flask
+fastapi
+
+# Web frameworks
+
+streamlit
+Django
