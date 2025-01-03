@@ -15,7 +15,7 @@ apache-airflow
 
 matplotlib
 seaborn
-pltotly
+plotly
 
 # ML frameworks
 

@@ -64,3 +64,31 @@ class Paths:
         '''
         for path in [Paths.DATA_DIR, Paths.MODELS_DIR, Paths.LOGS_DIR]:
             os.makedirs(path, exist_ok=True)
+
+class MetricsMonitor:
+    @staticmethod
+    def outliers_analysis(dataframe):
+        '''
+        Create outliers analysis, if applicable
+        '''
+        import numpy as np
+        import scipy.stats as stats
+
+        z_scores = stats.zscore(dataframe.select_dtypes(include=[np.number]))
+        outliers = (abs(z_scores) > 3).sum()
+        return outliers
+
+
+    @staticmethod
+    def multicolinearity_analysis(dataframe):
+        '''
+        Create multicolinearity analysis, if applicable
+        '''
+        import pandas as pd
+        from statsmodels.stats.outliers_influence import variance_inflation_factor
+
+        vif_data = pd.DataFrame()
+        vif_data["feature"] = dataframe.columns
+        vif_data["VIF"] = [variance_inflation_factor(dataframe.values, i) for i in range(dataframe.shape[1])]
+        return vif_data
+    
